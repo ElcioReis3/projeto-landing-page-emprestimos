@@ -1,7 +1,19 @@
 @media only screen and (min-width: 880px) {
     .area-flex {
+        height: 500px;
         flex-direction: row-reverse;
         justify-content: center;
         padding-top: 70px;
+    }
+
+    .logo-area {
+        max-width: 470px;
+    }
+
+    .text-area h1,
+    span {
+        font-size: 48px;
+        font-weight: 700;
+        color: #0045a5;
     }
 }
