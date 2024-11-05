@@ -8,3 +8,10 @@ document.querySelectorAll(".contato").forEach((item) => {
         window.open(url);
     })
 })
+
+document.querySelectorAll('.infoCard').forEach((item) => {
+    item.addEventListener('click', (event) => {
+        let card = item.children[1]
+        card.classList.toggle('showAbout');
+    })
+})

@@ -16,4 +16,14 @@
         font-weight: 700;
         color: #0045a5;
     }
+
+    .title {
+        width: 50%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .infoCard h2 {
+        font-size: 22px;
+    }
 }
