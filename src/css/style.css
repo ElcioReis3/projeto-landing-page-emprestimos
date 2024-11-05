@@ -184,9 +184,12 @@ span {
 
 .infoCard {
     width: 100%;
-    padding: 16px;
+    padding: 12px;
     background: #003277;
     cursor: pointer;
+    display: none;
+    overflow: hidden;
+    border-bottom: 4px solid #777;
 
     & h2 {
         font-size: 18px;
@@ -194,13 +197,20 @@ span {
 }
 
 .cardHiddem {
+    max-height: 0;
     background: #004099;
-    display: none;
     padding: 16px;
     text-wrap: wrap;
+    border-radius: 8px;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .showAbout {
     transition: 3s;
-    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+    max-height: max-content;
 }
