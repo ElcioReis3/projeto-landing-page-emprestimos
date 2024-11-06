@@ -23,6 +23,10 @@
         line-height: 30px;
     }
 
+    .infoCard {
+        width: 50%;
+    }
+
     .infoCard h2 {
         font-size: 22px;
     }

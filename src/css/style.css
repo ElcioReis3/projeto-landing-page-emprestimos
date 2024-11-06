@@ -99,15 +99,17 @@ span {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    background: #0045a5;
+    background: #3dd600;
     color: #FFF;
     padding: 8px;
     border-radius: 18px;
     border: none;
     cursor: pointer;
+    box-shadow: 2px 3px 5px #777;
 
     &:hover {
-        background: #003277;
+        background: #06b900;
+        box-shadow: 2px 3px 7px #333;
         transition: 1s;
     }
 }
@@ -143,6 +145,7 @@ span {
     justify-content: center;
     gap: 10px;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .card {
@@ -167,7 +170,7 @@ span {
 }
 
 .grey {
-    background: #777;
+    background: #aaaaaa;
     padding: 30px;
 }
 
@@ -175,7 +178,7 @@ span {
     background: #FFF;
     color: #003277;
     transition: 2s;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: 1px 1px 4px #aaaaaa;
 
     &:hover {
         color: #FFF;
@@ -183,13 +186,13 @@ span {
 }
 
 .infoCard {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     background: #003277;
     cursor: pointer;
     display: none;
     overflow: hidden;
-    border-bottom: 4px solid #777;
+    border-bottom: 4px solid #aaaaaa;
 
     & h2 {
         font-size: 18px;
@@ -213,4 +216,10 @@ span {
     opacity: 1;
     visibility: visible;
     max-height: max-content;
+}
+
+#private::before {
+    content: 'Criador por';
+    color: #FFF;
+    margin-right: 12px;
 }
